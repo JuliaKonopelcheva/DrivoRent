@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrivoRent</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>        
+</head>
+<body>
+    <img src="./images/car1.png" alt="Car Image" class="background-image">
+
+    <header class="header">
+        <h1>DrivoRent</h1>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__list-item">
+                    <a href="#Home">Home</a>
+                </li>
+                <li class="navigation__list-item">
+                    <a href="#Fleet">Our Fleet</a>
+                </li>
+                <li class="navigation__list-item">
+                    <a href="#BookNow">Book Now</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <section class="intro" id="Home">
+            <h2>Cars for Life<br>and Travel</h2>
+            <p class="intro__paragrah">what we offer</p>
+            <ul class="intro__list">
+                <li class="intro__list-item">
+                    <span class="icon"></span>
+                    <span class="text">Business-class cars for meetings and negotiations</span>
+                </li>
+                <li class="intro__list-item">
+                    <span class="icon"></span>
+                    <span class="text">SUVs for travel and outdoor adventures</span>
+                </li>
+                <li class="intro__list-item">
+                    <span class="icon"></span>
+                    <span class="text">Car rentals for weddings and special events</span>
+                </li>
+            </ul>
+            
+            <button class="intro__button" type="button">order</button>
+        </section>
+        <section class="fleet__section" id="Fleet">
+            <div class="fleet__section-content">
+                <div class="first__img-fleet-section">
+                    <img
+                    class="first__img img"
+                    src="./images/car2.png"
+                    alt="Машина у бизнес центра">
+                </div>
+                <div class="fleet__section-description">
+                    <ul class="fleet__section-description-list">
+                        <li class="fleet__section-description-list-item">Our fleet includes city sedans, premium business cars, and spacious SUVs. Choose the perfect vehicle to match your needs</li>
+                        <li class="fleet__section-description-list-item">Rent a car for a few hours, days, or even months. We adapt to your schedule and offer the best conditions</li>
+                        <li class="fleet__section-description-list-item">All our cars undergo regular maintenance. You’ll receive a clean, fueled, and fully serviced vehicle, ready for your journey</li>
+                        <li class="fleet__section-description-list-item">Reserve your car online in just a few minutes. Minimal paperwork, transparent terms, and instant booking confirmation</li>
+                    </ul>
+                    <button  class="intro__button fleet__button" type="button">order</button>
+                </div>
+                <div class="first__img-fleet-section">
+                    <img
+                    class="second__img img"
+                    src="./images/car3.png"
+                    alt="Машина на природе">
+                </div>
+                
+
+            </div>
+        </section>
+        <section class="form-section" id="BookNow">
+            <div class="form-container">
+                <h3>Consectetur<br>sed do eiusmod</h3>
+                <form id="contact-form" class="contact-form">
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+            
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+            
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="privacy">
+                        <span>I accept Privacy policy</span>
+                    </label>
+            
+                    <button type="submit" id="submit-btn" disabled>SUBMIT FORM</button>
+                </form>
+                <img src="./images/car4.png" alt="Decorative Image" class="form-image">
+            </div>
+            
+            
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+            <ul class="footer-nav">
+                <li class="navigation__list-item">
+                    <a href="#Home">Home</a>
+                </li>
+                <li class="navigation__list-item">
+                    <a href="#Fleet">Our Fleet</a>
+                </li>
+                <li class="navigation__list-item">
+                    <a href="#BookNow">Book Now</a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="footer-content">
+            <div class="footer-left">
+                <h2>DrivoRent</h2>
+                <p>© 2024, Copyright.</p>
+                
+            </div>
+            <div class="footer-information">
+                <div class="footer-icons">
+                    <a href="#"><img src="./images/inst.svg" alt="Instagram"></a>
+                    <a href="#"><img src="./images/tiktok.svg" alt="TikTok"></a>
+                    <a href="#"><img src="./images/in.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="./images/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="./images/tg.svg" alt="Telegram"></a>
+                    <a href="#"><img src="./images/you.svg" alt="YouTube"></a>
+                </div>
+                <a href="#">Privacy policy</a>
+
+
+            </div>
+            
+    
+            <div class="footer-right">
+                <button class="intro__button footer__button" type="button">order</button>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
