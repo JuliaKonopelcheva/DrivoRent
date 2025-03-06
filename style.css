@@ -112,7 +112,7 @@ h2 {
 .intro__list {
   display: flex;
   flex-direction: column;
-  gap: 1.5vw; /* Отступ между пунктами */
+  gap: 1.5vw;
   margin: 0;
   padding: 0;
   padding-bottom: 2.08vw;
@@ -122,22 +122,22 @@ h2 {
 .intro__list-item {
   display: flex;
   align-items: center;
-  gap: 1vw; /* Отступ между иконкой и текстом */
+  gap: 1vw; 
 }
 
 .icon {
   display: inline-block;
-  flex-shrink: 0; /* Чтобы иконка не сжималась */
-  width: 2.5vw; /* Размер иконки */
+  flex-shrink: 0; 
+  width: 2.5vw;
   height: 2.5vw;
-  background-image: url("./images/icon1.svg"); /* Путь к SVG */
+  background-image: url("./images/icon1.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .text {
   color: white;
-  font-family: 'Prata', serif; /* Используем шрифт */
+  font-family: 'Prata', serif;
   font-weight: 400;
   font-size: 1.25vw;
 }
@@ -190,7 +190,7 @@ font-size: 1.25vw;
   margin: 0; 
   padding: 0;
   overflow: auto;
-  overflow-x: hidden; /* Отключаем горизонтальный скролл */
+  overflow-x: hidden;
   overflow-y: auto; /* Включаем вертикальный скролл при необходимости */
   list-style: none;
   
@@ -209,8 +209,8 @@ font-size: 1.25vw;
   font-size: 1.25vw;
   line-height: 140%;
 
-  word-wrap: break-word; /* Перенос слов внутри блока */
-    white-space: normal; /* Позволяет тексту переноситься */
+  word-wrap: break-word;
+    white-space: normal; 
 }
 
 .fleet__section-description-list-item:last-child {
@@ -223,7 +223,7 @@ font-size: 1.25vw;
   flex-shrink: 0;
   width: 3.0208vw;
   height: 2.4479vw;
-  background-image: url("./images/icon2.svg"); /* Путь к иконке */
+  background-image: url("./images/icon2.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -258,8 +258,8 @@ font-size: 1.25vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 83.18vw; /* 1597px в vw */
-  height: 32.71vw; /* 628px в vw */
+  width: 83.18vw;
+  height: 32.71vw;
   border-radius: 1.5vw;
   padding: 3vw;
   box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1);
@@ -341,9 +341,9 @@ button {
 .form-image {
   position: absolute;
   top: 60%;
-  right: -5vw; /* Смещение вправо за границы формы */
-  z-index: 2; /* Поднимаем выше формы */
-  width: 45vw; /* Регулируй размер в зависимости от изображения */
+  right: -5vw;
+  z-index: 2;
+  width: 45vw;
   height: auto;
   height: 40vw;
   object-fit: cover;
@@ -501,11 +501,10 @@ button {
 
   .fleet__section {
     height: 100%;
-    padding: 2vw;
   }
 
   .img {
-    height: 90vw;
+    height: 80vw;
   }
 
   .fleet__section-description {
@@ -517,18 +516,17 @@ button {
   .fleet__section-content {
     flex-direction: column;
     align-items: center;
-    gap: 1vw;
+    gap: 4vw;
     height: 100%;
   }
 
   .fleet__section-description-list {
-    align-items: center;
+    gap: 3vw;
     width: 90%;
     height: 100%;
   }
 
   .form-section {
-    padding: 2vw;
     height: 100%;
   }
 
@@ -571,17 +569,21 @@ button {
     width: 3vw;
 }
 
+.background-image {
+  width: 260px;
+  top: 20%;
+}
 }
 
 
 @media (max-width: 768px) {
-
-
 .background-image {
   display: none;
 }
 
-
+h1 {
+  font-size: 4vw;
+}
 
 .icon {
   width: 20px;
@@ -589,14 +591,35 @@ button {
 }
 
   .intro {
-    padding: 2vw 2vw;
+    padding: 8vw 2vw;
     text-align: center;
     align-items: center;
     height: 100%;
+    background-image: url('./images/car5.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+  }
+
+  h2 {
+    padding-bottom: 2vw;
+  }
+
+  .intro__list {
+    padding-bottom: 5vw;
+  }
+
+
+  .intro__list-item {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
   }
 
   .intro__paragrah {
     font-size: 20px;
+    padding-bottom: 4vw;
   }
 
   .intro__button {
@@ -612,6 +635,7 @@ button {
 
   .fleet__section-description-list {
     width: 90%;
+    gap: 5vw;
   }
 
   .form-container {
@@ -668,12 +692,16 @@ button {
     text-align: center;
   }
 
+  h1 {
+    font-size: 6vw;
+  }
+
   .form-image {
     display: none;
   }
 
   .intro__button {
-    width: 100%;
+    width: 90%;
     height: auto;
     padding: 2vw;
   }
@@ -691,6 +719,10 @@ button {
     padding: 3vw;
   }
 
+  .img {
+    height: 90vw;
+  }
+
 
   button {
     width: 100%;
@@ -698,7 +730,7 @@ button {
     font-size: 4vw;
   }
 
-  /* Футер */
+
   .footer {
     text-align: center;
   }
